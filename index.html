@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Event Calendar</title>
+</head>
+<body>
+    <div class="planner">
+        <h1>Calendario de eventos</h1>
+        <div id="calendar" class="calendar-grid">
+            
+        </div>
+    </div>
+
+    <btton class="add-task-btn" onclick="showAddTaskModal()">Agregar Tarea</btton>
+    
+    <div id="addTaskModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAddTaskModal()"></span>
+            <h2>Add task</h2>
+            <input type="date" id="task-date">
+            <input type="text"  id="task-desc" placeholder="Task description">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
